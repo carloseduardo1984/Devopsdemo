@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extentreports>
+    <configuration>
+        <encoding>UTF-8</encoding>
+        <documentTitle>Cucumber Automation Reports - v1.0.0</documentTitle>
+        <reportName>Cucumber Automation Reports - Environment: UAT - Browser: Chrome v92 </reportName>
+        <dateFormat>yyyy-MM-dd</dateFormat>
+        <timeFormat>HH:mm:ss</timeFormat>
+        <reportHeadline> - v1.0.0</reportHeadline>
+
+
+    </configuration>
+</extentreports>
