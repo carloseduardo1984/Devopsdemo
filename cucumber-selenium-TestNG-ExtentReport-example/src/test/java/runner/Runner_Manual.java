@@ -9,8 +9,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(features={"src//test//java//features"}, glue={"stepdef"},
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter:test-output/cucumber-reports/Manual_TestReport.html" },
-        monochrome = true,
-        tags ={"@TestCase02"})
+        monochrome = true)
+        //tags ={"@TestCase02"})
 
         //Setup by Tags on Feature Files
 

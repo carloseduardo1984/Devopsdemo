@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 12, 2021 04:52:15 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Sep 1, 2021 08:28:28 AM</span>
 				</a>
 			</li>
 			<li>
@@ -86,6 +86,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@Regression</a></li>
+					<li><a href='#'>@TestCase01</a></li>
 					<li><a href='#'>@TestCase02</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -134,7 +135,7 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -149,7 +150,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -169,36 +170,65 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Broken links verification</span>
-						<span class='test-time'>Jul 12, 2021 04:52:15 PM</span>
+						<span class='test-name'>Login process verification</span>
+						<span class='test-time'>Sep 1, 2021 08:28:28 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 12, 2021 04:52:15 PM</span>
-	<span class='label end-time'>Jul 12, 2021 04:52:43 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+963ms</span>
+	<span class='label start-time'>Sep 1, 2021 08:28:28 AM</span>
+	<span class='label end-time'>Sep 1, 2021 08:28:34 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+707ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>@Regression</span>
+				<span class='category label white-text'>@TestCase01</span>
 			</div>
 	</div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1  pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
-						<h5 class='node-name'>Scenario: Broken Links Verification</h5>
+						<h5 class='node-name'>Scenario Outline: Simple links verification</h5>
 						<span class='test-status right pass'>pass</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 27s+956ms</span>
-								<span class='category label white-text'>@TestCase02</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 6s+703ms</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>8:28:28 AM</td>
+													<td class='step-details'><table><tr><td>arg1</td><td>arg2</td><td>arg3</td></tr><tr><td>http://demo.guru99.com/V1/index.php</td><td>mgr123</td><td>mgr!23</td></tr></table></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-2  pass' status='pass' test-id='3'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Scenario: Simple links verification</h5>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 6s+689ms</span>
+								<span class='category label white-text'>@TestCase01</span>
+								<span class='category label white-text'>@Regression</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf pass' status='pass' test-id='3'>
+				<li class='node level-3 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
-						<h5 class='node-name'>Given an user need to access a web browser</h5>
+						<h5 class='node-name'>Given an operational user of bank link page "http://demo.guru99.com/V1/index.php"</h5>
 						<span class='test-status right pass'>pass</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 8s+899ms</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+342ms</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -213,7 +243,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:52:24 PM</td>
+													<td class='timestamp'>8:28:32 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -221,7 +251,124 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='4'>
+				<li class='node level-3 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>When you insert the SOEID "mgr123" and password "mgr!23"</h5>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 0s+352ms</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:28:32 AM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Then the results are the login process with success</h5>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 1s+990ms</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:28:34 AM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+						</ul>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Broken links verification</span>
+						<span class='test-time'>Sep 1, 2021 08:28:34 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 1, 2021 08:28:34 AM</span>
+	<span class='label end-time'>Sep 1, 2021 08:28:57 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+753ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>@Regression</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1  pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Scenario: Broken Links Verification</h5>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 22s+753ms</span>
+								<span class='category label white-text'>@TestCase02</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-2 leaf pass' status='pass' test-id='9'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Given an user need to access a web browser</h5>
+						<span class='test-status right pass'>pass</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 4s+765ms</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>8:28:39 AM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>When is opened</h5>
 						<span class='test-status right pass'>pass</span>
@@ -240,7 +387,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:52:24 PM</td>
+													<td class='timestamp'>8:28:39 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -248,11 +395,11 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='5'>
+				<li class='node level-2 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Then check if exist any broken link</h5>
 						<span class='test-status right pass'>pass</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 19s+25ms</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 17s+988ms</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -267,7 +414,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:52:43 PM</td>
+													<td class='timestamp'>8:28:57 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -334,12 +481,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@Regression</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label pass'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
 							
 							
 						</div>
@@ -355,8 +502,57 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 12, 2021 04:52:15 PM</td>
-										<td class='linked' test-id='1'>Broken links verification</td>
+										<td>Sep 1, 2021 08:28:28 AM</td>
+										<td class='linked' test-id='1'>Login process verification</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 1, 2021 08:28:28 AM</td>
+										<td class='linked' test-id='3'>Login process verification.Scenario Outline: Simple links verification.Scenario: Simple links verification</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 1, 2021 08:28:34 AM</td>
+										<td class='linked' test-id='7'>Broken links verification</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@TestCase01</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 1, 2021 08:28:28 AM</td>
+										<td class='linked' test-id='1'>Login process verification</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Sep 1, 2021 08:28:28 AM</td>
+										<td class='linked' test-id='3'>Login process verification.Scenario Outline: Simple links verification.Scenario: Simple links verification</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -389,8 +585,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 12, 2021 04:52:15 PM</td>
-										<td class='linked' test-id='2'>Broken links verification.Scenario: Broken Links Verification</td>
+										<td>Sep 1, 2021 08:28:34 AM</td>
+										<td class='linked' test-id='8'>Broken links verification.Scenario: Broken Links Verification</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -419,31 +615,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 12, 2021 04:52:15 PM</div>
+					<div class='panel-lead'>Sep 1, 2021 08:28:28 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 12, 2021 04:52:43 PM</div>
+			 		<div class='panel-lead'>Sep 1, 2021 08:28:57 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>28,174ms</div>
+					<div class='panel-lead'>29,678ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -459,7 +655,13 @@
 						</tr>
 						<tr>
 							<td>@Regression</td>
-							<td>1</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@TestCase01</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
@@ -482,7 +684,7 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 3,
+				passParent: 6,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -490,7 +692,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 3,
+				passChild: 6,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,

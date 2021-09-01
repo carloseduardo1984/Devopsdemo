@@ -137,9 +137,9 @@ public class TestCase02_Steps {
             System.out.println("Total of broken links: " + broken);
 
             // Capture Screenshot ==============================================
-            TakesScreenshot ts = (TakesScreenshot) driver;
-            File file = ts.getScreenshotAs(OutputType.FILE);
-            copyFile(file, new File("./Screenshots/TC2_Stp03.png"));
+            //TakesScreenshot ts = (TakesScreenshot) driver;
+            //File file = ts.getScreenshotAs(OutputType.FILE);
+            //copyFile(file, new File("./Screenshots/TC2_Stp03.png"));
             // Capture Screenshot ==============================================
 
             driver.quit();

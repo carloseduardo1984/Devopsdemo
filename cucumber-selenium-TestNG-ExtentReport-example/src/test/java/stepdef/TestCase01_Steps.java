@@ -17,7 +17,7 @@ public class TestCase01_Steps {
 
      private WebDriver driver;
 
-    String url = "";
+    String url = "https://www.stellaxius.com/";
     HttpURLConnection huc = null;
     int respCode = 200;
 
