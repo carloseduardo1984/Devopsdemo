@@ -1,8 +1,15 @@
-# cucumber-jvm-java-example
+# Devopsdemo
+DevOps demo
+
+
+# Summary
+This is an example BDD test automation Project for Java using the Cucumber-JVM framework and Cucumber report on output folder.
+It contains a simple behavior scenario that performs a basic valid links verification.
 This is an example BDD test automation Project for Java using the Cucumber-JVM framework, with Cucumber report.
 It contains a simple behavior scenario that performs a basic valid links on webpage and Jenkins CI/CD with Maven trigger.
 
 ### Purpose
+This project was developed by Carlos Eduardo de Oliveira SQA - CTFL.
 This project was developed by Carlos Eduardo de Oliveira to show a simple demo with Jenkins Job trigged by Maven process, for CI/CD applications.
 
 ### Version
@@ -10,23 +17,18 @@ This project uses Cucumber-JVM 2.0.
 If using IntelliJ IDEA, please make sure to update to the latest version of the
 [Cucumber for Java plugin](https://plugins.jetbrains.com/plugin/7212-cucumber-for-java).
 Delete any old Run Configurations if updating, as well.
-
 ### Web Driver Setup
 This project uses Selenium WebDriver to interact with the Chrome web browser.
 In order for the tests to work, [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
 must be installed on the test machine and accessible from the system PATH.
 (This means that it must be accessible from the command line.)
-
 The source code may easily be changed to work with any other web browser.
 Just remember to install the required web drivers.
-
 ### Running Tests
 This project uses [Maven](https://maven.apache.org/).
 To run tests, simply run "mvn clean test".
-
 ### Practice Exercises
 To practice BDD and automation, try the following exercises:
-
 1. The assertion for the "results for ___ are shown" step checks only the page title.
    Add more comprehensive assertions to strengthen the test.
 2. Add a new scenario to search any website.
@@ -42,5 +44,8 @@ To practice BDD and automation, try the following exercises:
    should be put in the framework package.
 6. Write a new feature for basic service-level testing.
 7. Create separate test runners that partition the set of features using tags.
-8. Add logging to the tests with [SLF4J](https://www.slf4j.org/) or
-   [Extent Reports](http://extentreports.com/).
+8. Add reports [Extent Reports](http://extentreports.com/).
+9. Tested with Maven jobs on Jenkins 2.303.1 (witrh the plugins: Maven, Email extension, and Git).
+
+![1](https://user-images.githubusercontent.com/33332202/132147421-3462d342-8163-490a-9c75-45d961be150a.PNG)
+
