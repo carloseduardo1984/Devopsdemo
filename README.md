@@ -46,3 +46,6 @@ To practice BDD and automation, try the following exercises:
 7. Create separate test runners that partition the set of features using tags.
 8. Add reports [Extent Reports](http://extentreports.com/).
 9. Tested with Maven jobs on Jenkins 2.303.1 (witrh the plugins: Maven, Email extension, and Git).
+
+![1](https://user-images.githubusercontent.com/33332202/132147421-3462d342-8163-490a-9c75-45d961be150a.PNG)
+
