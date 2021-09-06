@@ -1,9 +1,9 @@
 # cucumber-jvm-java-example
-This is an example BDD test automation Project for Java using the Cucumber-JVM framework, with Cucumber report.
-It contains a simple behavior scenario that performs a basic valid links on webpage and Jenkins CI/CD with Maven trigger.
+This is an example BDD test automation Project for Java using the Cucumber-JVM framework.
+It contains a simple behavior scenario that performs a basic Google search.
 
 ### Purpose
-This project was developed by Carlos Eduardo de Oliveira to show a simple demo with Jenkins Job trigged by Maven process, for CI/CD applications.
+This project was developed by Carlos Eduardo de Oliveira SQA - CTFL.
 
 ### Version
 This project uses Cucumber-JVM 2.0.
