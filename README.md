@@ -49,3 +49,8 @@ To practice BDD and automation, try the following exercises:
 
 ![1](https://user-images.githubusercontent.com/33332202/132147421-3462d342-8163-490a-9c75-45d961be150a.PNG)
 
+Reports
+-------------------------
+![image](https://user-images.githubusercontent.com/33332202/132152161-35dcb9f3-6d36-47d5-a7d6-26b1e3f6993b.png)
+
+
