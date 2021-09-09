@@ -6,6 +6,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,7 +40,9 @@ public class TestCase01_Steps {
         driver = new ChromeDriver();
 
         driver.get(arg1);
+        System.out.println("Feature 1- step 1 - Open Bank page");
 
+        System.out.println("Feature 1- step 2 - Take screenshot Bank page");
         // Capture Screenshot ==============================================
         TakesScreenshot ts = (TakesScreenshot) driver;
         File file = ts.getScreenshotAs(OutputType.FILE);
@@ -51,13 +55,21 @@ public class TestCase01_Steps {
         // Write code here that turns the phrase above into concrete actions
         driver.findElement(By.name("uid")).sendKeys(arg1);
 
+
+
         driver.findElement(By.xpath("/html/body/form/table/tbody/tr[2]/td[2]/input")).sendKeys(arg2);
 
+
+        System.out.println("Feature 1- step 3 - Login validation");
+
+        System.out.println("Feature 1- step 4 - Take screenshot of the Login validation");
         // Capture Screenshot ==============================================
         TakesScreenshot ts = (TakesScreenshot) driver;
         File file = ts.getScreenshotAs(OutputType.FILE);
         copyFile(file,new File("./Screenshots/TC1_Stp02.png"));
         // Capture Screenshot ==============================================
+
+
     }
 
     @Then("^the results are the login process with success$")
@@ -65,11 +77,27 @@ public class TestCase01_Steps {
         // Write code here that turns the phrase above into concrete actions
         driver.findElement(By.xpath("/html/body/form/table/tbody/tr[2]/td[2]/input")).sendKeys(Keys.ENTER);
 
+        System.out.println("Feature 1- step 5 - After Login validation check assert and validation features");
         // Capture Screenshot ==============================================
         TakesScreenshot ts = (TakesScreenshot) driver;
         File file = ts.getScreenshotAs(OutputType.FILE);
         copyFile(file,new File("./Screenshots/TC1_Stp03.png"));
         // Capture Screenshot ==============================================
+
+        System.out.println("Feature 1- step 6 - Code Snippet for assertEquals() in Selenium");
+        driver.navigate().to("https://www.browserstack.com/");
+        String ActualTitle = driver.getTitle();
+        String ExpectedTitle = "Most Reliable App & Cross Browser Testing Platform | BrowserStack";
+        Assert.assertEquals(ExpectedTitle, ActualTitle);
+
+        System.out.println("Feature 1- step 7 - Example of Soft Assert in Selenium (or Verify in Selenium)");
+        SoftAssert softAssert = new SoftAssert();
+        driver.navigate().to("https://www.browserstack.com/");
+        String getActualTitle = driver.getTitle();
+        Boolean verifyTitle = driver.getTitle().equalsIgnoreCase("Most Reliable App & Cross Browser Testing Platform | BrowserStack");
+        softAssert.assertEquals(getActualTitle, "Most Reliable App & Cross Browser Testing Platform | BrowserStack");
+
+
 
         driver.quit();
     }

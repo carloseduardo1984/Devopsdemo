@@ -42,8 +42,12 @@ public class TestCase02_Steps {
         driver = new ChromeDriver(options);
         //driver = new ChromeDriver();
 
+        System.out.println("Feature 2- step 1 - Valid links confirmation");
+
         driver.get("http://demo.guru99.com/V1/index.php");
         // Capture Screenshot ==============================================
+
+        System.out.println("Feature 2- step 2 - Take screenshots of Valid links confirmation");
         TakesScreenshot ts = (TakesScreenshot) driver;
         File file = ts.getScreenshotAs(OutputType.FILE);
         copyFile(file,new File("./Screenshots/TC2_Stp01.01.png"));
@@ -65,7 +69,9 @@ public class TestCase02_Steps {
         String texto = element.getText();
         //assertTrue(texto, element.isDisplayed());
 
-        System.out.println(texto);
+        System.out.println("Feature 2- step 3 - Get Bank page name: " + texto);
+
+        //System.out.println(texto);
         // Capture Screenshot ==============================================
         ts = (TakesScreenshot) driver;
         file = ts.getScreenshotAs(OutputType.FILE);
@@ -78,10 +84,13 @@ public class TestCase02_Steps {
     public void is_opened()  {
         // Write code here that turns the phrase above into concrete actions
 
+
     }
 
     @Then("^check if exist any broken link$")
     public void check_if_exist_any_broken_link() throws IOException {
+
+        System.out.println("Feature 2- step 4 - Show Valid links confirmation");
         // Write code here that turns the phrase above into concrete actions
         List<WebElement> links = driver.findElements(By.tagName("a"));
 
