@@ -41,7 +41,7 @@ public class TestCase02_Steps {
         options.setExperimentalOption("useAutomationExtension", false);
         driver = new ChromeDriver(options);
         //driver = new ChromeDriver();
-
+        System.out.println("===========================START TESTS======================");
         System.out.println("Feature 2- step 1 - Valid links confirmation");
 
         driver.get("http://demo.guru99.com/V1/index.php");
@@ -150,7 +150,7 @@ public class TestCase02_Steps {
             //File file = ts.getScreenshotAs(OutputType.FILE);
             //copyFile(file, new File("./Screenshots/TC2_Stp03.png"));
             // Capture Screenshot ==============================================
-
+        System.out.println("===========================END   TESTS======================");
             driver.quit();
 
                                 }

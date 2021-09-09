@@ -40,6 +40,7 @@ public class TestCase01_Steps {
         driver = new ChromeDriver();
 
         driver.get(arg1);
+        System.out.println("===========================START TESTS======================");
         System.out.println("Feature 1- step 1 - Open Bank page");
 
         System.out.println("Feature 1- step 2 - Take screenshot Bank page");
@@ -97,7 +98,7 @@ public class TestCase01_Steps {
         Boolean verifyTitle = driver.getTitle().equalsIgnoreCase("Most Reliable App & Cross Browser Testing Platform | BrowserStack");
         softAssert.assertEquals(getActualTitle, "Most Reliable App & Cross Browser Testing Platform | BrowserStack");
 
-
+        System.out.println("==========================================================");
 
         driver.quit();
     }
