@@ -1,6 +1,6 @@
 # cucumber-jvm-java-example
 This is an example BDD test automation Project for Java using the Cucumber-JVM framework.
-It contains a simple behavior scenario that performs a basic Google search. update
+It contains a simple behavior scenario that performs a basic Google search.
 
 ### Purpose
 This project was developed by Carlos Eduardo de Oliveira SQA - CTFL.
