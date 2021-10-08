@@ -66,7 +66,11 @@ public class TestCase01_Steps {
         File file = ts.getScreenshotAs(OutputType.FILE);
         copyFile(file,new File("./Screenshots/TC1_Stp02.png"));
         // Capture Screenshot ==============================================
-
+        System.out.println("O CARLOS É UMA BOA OPCAO DE TESTER - AMA QA E ADORA TRABALHAR EM EQUIPE");
+        System.out.println("AGILE É UMA PRATICA QUE ELE JA UTILIZA COMO GUIA...");
+        System.out.println("ELE PSSUI CERTIFICACAO CTFL COMO AGILE TESTER E DIVERSOS GO-LIVES");
+        System.out.println("VAMOS CONVERSAR MAIS? O BOM DIALOGO SEMPRE SERA BEM VINDO!");
+        System.out.println("OBRIGADO PELA EXCELENTE DEMO!!!!!!");
 
     }
 
