@@ -54,3 +54,7 @@ Reports
 ![image](https://user-images.githubusercontent.com/33332202/132152161-35dcb9f3-6d36-47d5-a7d6-26b1e3f6993b.png)
 
 
+NEXT STEPS FOR COMPLETE CI/CD AUTOMATION
+-----------------------------------------------------------------------------------------------------------------
+![PIPELINES](https://user-images.githubusercontent.com/33332202/144241965-89fe6d0c-65be-4bb5-b54f-cc022ea7330d.png)
+
