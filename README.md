@@ -13,11 +13,11 @@ This project was developed by Carlos Eduardo de Oliveira SQA - CTFL.
 This project was developed by Carlos Eduardo de Oliveira to show a simple demo with Jenkins Job trigged by Maven process, for CI/CD applications.
 
 ### Version
-This project uses Cucumber-JVM 2.0.
+This project uses Cucumber-JVM 2.0.  -> https://cucumber.io/
 If using IntelliJ IDEA, please make sure to update to the latest version of the
 [Cucumber for Java plugin](https://plugins.jetbrains.com/plugin/7212-cucumber-for-java).
 Delete any old Run Configurations if updating, as well.
-### Web Driver Setup
+### Web Driver Setup - > https://chromedriver.chromium.org/downloads
 This project uses Selenium WebDriver to interact with the Chrome web browser.
 In order for the tests to work, [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
 must be installed on the test machine and accessible from the system PATH.
